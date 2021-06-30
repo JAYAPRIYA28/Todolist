@@ -75,7 +75,7 @@ app.post("/", function(req, res){
     name : newItem
   });
 
-  if(newItem == "Today"){
+  if(listItem == "Today"){
     item.save();
 
     res.redirect("/");
